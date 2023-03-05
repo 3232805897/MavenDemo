@@ -27,7 +27,7 @@ public class MyTomcat{
     public static void main(String[] args) throws IOException {
         new MyTomcat().init();
         ServerSocket serverSocket = new ServerSocket(8080);
-        System.out.println("服务端等待中");
+        System.out.println("我的服务端等待中");
         while (!serverSocket.isClosed()){
             Socket socket = serverSocket.accept();
             socketThread socketThread = new socketThread(socket);
